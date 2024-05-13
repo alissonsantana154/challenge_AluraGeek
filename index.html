@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    li
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/form.css">
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+            <img class="image-header" width="138px" height="56px" src="./assets/coracoes.png" alt="3-coracoes">
+            <h1 class="titulo-header">AluraGeek</h1>
+        </div>
+    </header>
+    <main class="container">
+        <section class="container-left">
+            <h1>MEUS PRODUTOS:</h1>
+            <div class="cards-elements" id="cards" data-cards></div>
+        </section>
+        <section class="container-right">
+            <h1>ADICIONAR PRODUTO:</h1>
+            <div class="form-elements">
+                <form class="container-formulario" data-formulario>
+                    <div class="form-inputs">             
+                        <input type="text" id="produto" name="produto" placeholder="nome..." data-produto minlength="4" required maxlength="35">            
+                        <input type="text" id="preco" name="preco" placeholder="valor..." data-preco minlength="4" required>
+                        <input type="text" id="imagem" name="imagem" placeholder="imagem..." data-imagem minlength="4" required>
+                    </div>
+                    <div class="form-btn-elements">
+                        <button class="btn-guardar" type="submit">Guardar</button>
+                        <button class="btn-limpar" type="reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-rodape">
+            <div class="rodape">
+                <img width="138px" height="56px" src="./assets/coracoes.png" alt="3-coracoes">
+                <h1 class="titulo-header">AluraGeek</h1>
+            </div>
+            <div class="rodape-p2">
+                <h3>Desenvolvido por Álisson Santana</h3>
+                <p>Alura LATAM - 2024</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/mostrarCard.js" type="module"></script>
+    <script src="./js/criarCard.js" type="module"></script>
+    <script src="./js/deletarCard.js" type="module"></script>
+</body>
+</html>
