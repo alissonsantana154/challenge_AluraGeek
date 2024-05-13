@@ -23,7 +23,7 @@ async function deletarCard(produto) {
     if (!card) { throw new Error("Card não encontrado"); 
     } 
     
-    const url = `http://localhost:3000/cards/${card.id}`; 
+    const url = `https://json-server-vercel-beta-five.vercel.app/cards/${card.id}`; 
     const response = await fetch(url, { method: 'DELETE' }); 
     if (!response.ok) { 
         throw new Error(`Erro ao deletar o card: ${response.statusText}`); 

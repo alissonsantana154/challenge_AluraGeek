@@ -1,12 +1,12 @@
 async function listaCards (){
-    const conexao = await fetch("http://localhost:3000/cards");
+    const conexao = await fetch("https://json-server-vercel-beta-five.vercel.app/cards");
     const conexaoConvertida = await conexao.json();
     
     return conexaoConvertida;
 }
 
 async function criaCard(imagem, produto, preco){
-    const conexao = await fetch("http://localhost:3000/cards",{
+    const conexao = await fetch("https://json-server-vercel-beta-five.vercel.app/cards",{
         method: "POST",
         headers: {
             "Content-Type": "application/json"
